@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rohan Online Book Store</title>
+    <style>
+        body {
+            background-color: #fdfdfd;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(247, 0, 185);
+            padding: 10px;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        header {
+            background-color: rgb(6, 197, 255);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+
+        .logo {
+            
+            position: absolute;
+            right: 50px;
+            top: 50px;
+            width: 100px;
+        }
+
+        .navb {
+            background-color: rgb(238, 255, 6);
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            top: 100px;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .navb a {
+            margin: 0 15px;
+        }
+
+        main {
+            margin-top: 80px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: rgb(219, 18, 18);
+            color: black;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .navb {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navb a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Rohan Online Book Store</h1>
+        <img src="book.png" alt="logo" class="logo">
+    </header>
+    <div class="navb">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="books.html">Books</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+    </div>
+    <main>
+        <h2>Explore Our Books</h2>
+        <p>Check out our collection of books available in various genres.</p>
+        <a href="books.html" class="button">View Books</a>
+        
+        <h2>Contact Us</h2>
+        <p>For any inquiries, please visit our <a href="contact.html">Contact Us</a> page.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 bookstore Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>

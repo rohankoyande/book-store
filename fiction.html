@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horrors Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            background-color: gold;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .books {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .books img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .breadcrumb {
+            padding: 10px 0;
+            list-style: none;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto 20px auto;
+        }
+        .breadcrumb li {
+            display: inline;
+            font-size: 16px;
+        }
+        .breadcrumb li + li::before {
+            content: ' > ';
+            padding: 0 8px;
+            color: #666;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb .current {
+            color: #666;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        
+        <li class="current">Horrors</li>
+    </ul>
+    <h1>Horrors Books</h1>
+    <div class="container">
+        <div class="books">
+            <img src="mbook1.jpg" alt="Book 1" width="180px" height="180px" >
+            <h3>Author: marvel</h3>
+            <p>Title: marvel</p>
+            <p>Price: Rs. 599</p>
+            <button class="button" type="button">Buy</button>
+        </div>
+        <div class="books">
+            <img src="mbook2.jpg" alt="Book 2">
+            <h3>Author: marvel</h3>
+            <p>Title: spider man 3</p>
+            <p>Price: Rs. 999</p>
+            <button class="button" type="button">Buy</button>
+        </div>
+    </div>
+</body>
+</html>

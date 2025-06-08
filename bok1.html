@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumb Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .breadcrumb {
+            padding: 10px 0;
+            list-style: none;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin: 0;
+        }
+        .breadcrumb li {
+            display: inline;
+            font-size: 16px;
+        }
+        .breadcrumb li + li::before {
+            content: ' > ';
+            padding: 0 8px;
+            color: #666;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb .current {
+            color: #666;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Page Title</h1>
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="/books">Books</a></li>
+            <li><a href="/books/fiction">Fiction</a></li>
+            <li class="current">Thriller</li>
+        </ul>
+        <p>Content of the "Thriller" page goes here.</p>
+    </div>
+</body>
+</html>

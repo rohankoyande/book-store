@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgba(213, 101, 241, 0.637);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-control {
+            border-radius: 5px;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .submit {
+            color: #ffffff;
+            background-color: green;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit:hover {
+            background-color: darkgreen;
+        }
+        .submit:active {
+            background-color: yellow;
+            color: black;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .forgot-password a {
+            color: rgb(247, 0, 185);
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <form action="#" method="post"> 
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="email"><b>Email</b></label>
+                <input type="text" class="form-control" placeholder="Enter Email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" class="form-control" placeholder="Enter Password" name="psw" id="psw" required>
+            </div>
+
+            <button type="submit" class="submit">Login</button>
+            <div class="forgot-password">
+                <p><a href="forgot-password.html">Forgot Password?</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

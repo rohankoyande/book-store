@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .breadcrumb {
+            padding: 10px 0;
+            list-style: none;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .breadcrumb li {
+            display: inline;
+            font-size: 16px;
+        }
+        .breadcrumb li + li::before {
+            content: ' > ';
+            padding: 0 8px;
+            color: #666;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb .current {
+            color: #666;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            margin: 5px 0;
+        }
+        .button:hover {
+            background-color: #3e8e41;
+        }
+        .button:focus {
+            outline: 2px solid #3e8e41;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Categories</h1>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li class="current">Categories</li>
+        </ul>
+        <div class="breadcrumb">
+            <a href="fiction.html" class="button">Fiction</a>
+            <a href="nonfiction.html" class="button">Non-Fiction</a>
+            <a href="romance.html" class="button">Romance</a>
+            <a href="mystery.html" class="button">Mystery</a>
+            <a href="thriller.html" class="button">Thriller</a>
+            <a href="sciencebooks.html" class="button">Science</a>
+            <a href="fantasy.html" class="button">Fantasy</a>
+            <a href="horrors.html" class="button">Horror</a>
+            <a href="biography.html" class="button">Biography</a>
+            <a href="selfhelp.html" class="button">Self-Help</a>
+        </div>
+    </div>
+</body>
+</html>

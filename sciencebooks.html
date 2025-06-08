@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        .container {
+            background-color: gold;
+            padding: 20px;
+        }
+        .books {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .breadcrumb {
+            padding: 10px 0;
+            list-style: none;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .breadcrumb li {
+            display: inline;
+            font-size: 16px;
+        }
+        .breadcrumb li + li::before {
+            content: ' > ';
+            padding: 0 8px;
+            color: #666;
+        }
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb .current {
+            color: #666;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            margin: 5px 0;
+        }
+        .button:hover {
+            background-color: #3e8e41;
+        }
+        .button:focus {
+            outline: 2px solid #3e8e41;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>science Book</h1>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="sciencebooks.html">science</a></li>
+            <li class="current">sciencebooks</li>
+        </ul>
+    <div class="container">
+        <div class="books">
+            <img src="book1.jpg" alt="Book 1"><br>
+            <h3>Author: Ganesh</h3>
+            <p>Subject: Engineering Mathematics</p>
+            <p>Price: Rs. 599</p>
+            <button class="button" type="button">Buy</button><br>
+        </div>
+        <div class="books">
+            <img src="book2.jpg" alt="Book 2"><br>
+            <h3>Author: Taranjeet</h3>
+            <p>Subject: Web Technologies</p>
+            <p>Price: Rs. 999</p>
+            <button class="button" type="button">Buy</button><br>
+        </div>
+    </div>
+</body>
+</html>
